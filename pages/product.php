@@ -1,6 +1,7 @@
 <?php
 $produtos = include('data/products.php');
-$produto = getProductByParam($produtos);
+
+$produto = findProductInArray($produtos, 'id', getUrlParam('id'));
 ?>
 
 <section class="single-product-page">

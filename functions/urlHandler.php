@@ -1,5 +1,15 @@
 <?php
 
+function getUrlParam($param)
+{
+    if (isset($_GET[$param]) || !empty($_GET[$param])) {
+        return $_GET[$param];
+    }
+
+    return null;
+}
+
+
 function getCurrentPage()
 {
     $rotas = include('config/routes.php');

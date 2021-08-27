@@ -1,25 +1,14 @@
 <?php
-function getProductByParam($produtos)
+function findProductInArray($productsArray, $key, $findBy)
 {
-    $productId = getProductHttpParamId();
-
-    if (!$productId) {
-        return;
+    if (!$findBy) {
+        return null;
     }
 
-    foreach ($produtos as $produto) {
-        if ($productId == $produto['id']) {
+    foreach ($productsArray as $produto) {
+        if ($produto[$key] == $findBy) {
             return $produto;
         }
-    }
-
-    return null;
-}
-
-function getProductHttpParamId()
-{
-    if (isset($_GET['id']) || !empty($_GET['id'])) {
-        return $_GET['id'];
     }
 
     return null;

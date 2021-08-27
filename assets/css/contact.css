@@ -1,0 +1,15 @@
+.contact-info {
+  text-align: left;
+}
+.contact-info a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-tertiary);
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.contact-info a:hover {
+  color: var(--color-tertiary-strong);
+  text-decoration: underline;
+}

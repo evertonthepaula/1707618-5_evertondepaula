@@ -1,0 +1,55 @@
+.container {
+  display: block;
+  max-width: 1232px;
+  padding: 16px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.sprites {
+  background: url(../img/icons/sprites.jpg) no-repeat;
+  float: left;
+  width: 142px;
+  height: 142px;
+  transform: scale(0.4);
+}
+
+.sprites.facebook {
+  background-position: -30px -40px;
+}
+
+.sprites.youtube {
+  background-position: -228px -425px;
+}
+
+.sprites.instagram {
+  background-position: -228px -619px;
+}
+
+.sprites.linkedin {
+  background-position: -628px -425px;
+}
+
+.sprites.whatsApp {
+  background-position: -628px -234px;
+}
+
+.sprites.gmail {
+  background-position: -228px -38px;
+}
+
+.title {
+  margin: 16px 0 40px;
+  font-family: "Pacifico", cursive;
+  color: var(--color-secondary-strong);
+}
+
+.subtitle {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  color: #fff;
+}
+
+label {
+  color: var(--color-primary);
+}
